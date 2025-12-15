@@ -85,30 +85,6 @@ http://localhost:8000
 
 ---
 
-##  Project Structure
-
-```text
-PHP_Laravel12_Create_Blade_File_Using_Command/
-│
-├── app/                    # Application logic
-├── bootstrap/              # Framework bootstrapping
-├── config/                 # Configuration files
-├── public/                 # Public entry point
-├── resources/
-│   └── views/              # Blade view files
-│       ├── home.blade.php
-│       └── users/
-│           └── index.blade.php
-├── routes/
-│   └── web.php             # Web routes
-├── storage/                # Logs and cache
-├── tests/                  # Test files
-├── .env                    # Environment config
-└── composer.json
-```
-
----
-
 ##  Create Blade Files Using Artisan Command
 
 ###  Create a Simple Blade File
@@ -166,11 +142,24 @@ resources/views/users/index.blade.php
 ### resources/views/users/index.blade.php
 
 ```blade
-<div>
-    <!-- Users Index Page -->
-    <h2>User List Page</h2>
-    <p>This view is inside users folder.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+</head>
+
+<body>
+    <div>
+        <!-- Users Index Page -->
+        <h2>User List Page</h2>
+        <p>This view is inside users folder.</p>
+    </div>
+</body>
+
+</html>
 ```
 
 ---
@@ -195,13 +184,35 @@ Route::get('/users', function () {
 });
 ```
 
+##  Project Structure
+
+```text
+PHP_Laravel12_Create_Blade_File_Using_Command/
+│
+├── app/                    # Application logic
+├── bootstrap/              # Framework bootstrapping
+├── config/                 # Configuration files
+├── public/                 # Public entry point
+├── resources/
+│   └── views/              # Blade view files
+│       ├── home.blade.php
+│       └── users/
+│           └── index.blade.php
+├── routes/
+│   └── web.php             # Web routes
+├── storage/                # Logs and cache
+├── tests/                  # Test files
+├── .env                    # Environment config
+└── composer.json
+```
+
 ---
 
 ##  Access Pages in Browser
 
 | Page       | URL                                                        |
 | ---------- | ---------------------------------------------------------- |
-| Home Page  | [http://localhost:8000](http://localhost:8000)             |
+| Home Page  | [http://localhost:8000/home](http://localhost:8000/home)             |
 | Users Page | [http://localhost:8000/users](http://localhost:8000/users) |
 
 ---
