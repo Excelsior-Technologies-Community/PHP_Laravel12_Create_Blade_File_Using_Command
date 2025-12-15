@@ -212,7 +212,7 @@ PHP_Laravel12_Create_Blade_File_Using_Command/
 
 | Page       | URL                                                        |
 | ---------- | ---------------------------------------------------------- |
-| Home Page  | [http://localhost:8000/home](http://localhost:8000/home)             |
+| Home Page  | [http://localhost:8000/home](http://localhost:8000/home)   |
 | Users Page | [http://localhost:8000/users](http://localhost:8000/users) |
 
 ---
