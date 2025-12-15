@@ -174,7 +174,7 @@ Open `routes/web.php` and add the following:
 use Illuminate\Support\Facades\Route;
 
 // Home route
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('home');
 });
 
