@@ -256,4 +256,7 @@ Users Page
 Now Your PHP_Laravel12_Create_Blade_File_Using_Command Project is Ready!
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> development
