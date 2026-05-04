@@ -23,6 +23,7 @@ class MakeBlade extends Command
         $directory = dirname($path);
         if (!File::isDirectory($directory)) {
             File::makeDirectory($directory, 0755, true);
+        }
 
         File::put($path, "<!-- New Blade File: $name -->");
 
